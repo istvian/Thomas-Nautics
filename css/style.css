@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none; }
+
+html {
+  height: fit-content;
+  font-size: 10px; }
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-anchor: none;
+  font-size: 10px; }
+
+.body {
+  font-family: 'Baloo 2', cursive; }
+  .body .nav {
+    background: #111111;
+    padding: 5rem; }
+    .body .nav .nav__logo {
+      height: 7rem; }
+    .body .nav .nav__title {
+      color: #FFF; }
+    .body .nav .nav__subtitle {
+      color: #FFF; }
