@@ -11,6 +11,9 @@ var modal = document.getElementById("myModal");
 span.onclick = function() {
     modal.style.display = "none";
 }
+modal.onclick = function() {
+    modal.style.display = "none";
+}
 
 function pop(file, text) {
     var img = document.getElementById("popImg");
