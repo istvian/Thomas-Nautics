@@ -7,20 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <title>Thomas Nautics</title>
 </head>
 
 <body class="body">
-    <nav class="nav">
-        <img class="nav__logo" src="img/icons/logo.webp" alt="" />
-        <h1 class="nav__title">Thomas Nautics Seguridad Marítima</h1>
-        <h2 class="nav__subtitle">Productos y servicios</h2>
-    </nav>
-    <section>
-        <article></article>
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="popImg">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+    <header class="header">
+        <a class="header__link" href="index.html"><img class="header__logo" src="img/icons/web_logo.webp" alt="" /></a>
+        <div class="header__container">
+            <div class="header__titles no_selection">
+                <h1 class="header__title">Thomas Nautics</h1>
+                <h2 class="header__subtitle">Seguridad Marítima</h2>
+            </div>
+        </div>
+    </header>
+    <section class="section">
+        <article class="article">
+            <h3 class="article__title">Productos y servicios</h3>
+            <h4 class="article__subtitle">Seleccione el producto que le interese</h4>
+            <div class="gallery">
+                <div class="gallery__item">
+                    <a href="javascript:pop('balsa','Balsa salvavida')"><img class="gallery__img" src="img/photos/balsa.jpg" alt=""></a>
+                    <a href="javascript:pop('balsa','Balsa salvavida')" class="gallery__text ">Balsa salvavida</a>
+                </div>
+                <div class="gallery__item">
+                    <a href="javascript:pop('balsa-inflable','Balsa inflable')"><img class="gallery__img" src="img/photos/balsa-inflable.jpg" alt=""></a>
+                    <a href="javascript:pop('balsa-inflable','Balsa inflable')" class="gallery__text ">Balsa inflable</a>
+                </div>
+                <div class="gallery__item">
+                    <a href="javascript:pop('chalecos-salvavidas','Chalecos salvavidas')"><img class="gallery__img" src="img/photos/chalecos-salvavidas.jpg" alt=""></a>
+                    <a href="javascript:pop('chalecos-salvavidas','Chalecos salvavidas')" class="gallery__text ">Chalecos salvavidas</a>
+                </div>
+                <div class="gallery__item">
+                    <a href="javascript:pop('otros-servicios','Otros servicios')"><img class="gallery__img" src="img/photos/otros-servicios.jpg" alt=""></a>
+                    <a href="javascript:pop('otros-servicios','Otros servicios')" class="gallery__text ">Otros servicios</a>
+                </div>
+                <div class="gallery__item">
+                    <a href="javascript:pop('senalizacion-emergencia','Señalización de emergencia')"><img class="gallery__img" src="img/photos/senalizacion-emergencia.jpg" alt=""></a>
+                    <a href="javascript:pop('senalizacion-emergencia','Señalización de emergencia')" class="gallery__text ">Señalización de emergencia</a>
+                </div>
+                <div class="gallery__item">
+                    <a href="javascript:pop('servicios-abordo','Servicios abordo')"><img class="gallery__img" src="img/photos/servicios-abordo.jpg" alt=""></a>
+                    <a href="javascript:pop('servicios-abordo','Servicios abordo')" class="gallery__text ">Servicios abordo</a>
+                </div>
+            </div>
+        </article>
     </section>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
