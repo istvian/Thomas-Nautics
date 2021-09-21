@@ -13,7 +13,7 @@
     <title>Thomas Nautics</title>
 </head>
 
-<body class="body">
+<body class="body" id="body">
     <div id="myModal" class="modal">
 
         <!-- The Close Button -->
@@ -26,7 +26,23 @@
         <div id="caption"></div>
     </div>
     <header class="header">
-        <a class="header__link" href="index.html"><img class="header__logo" src="img/icons/web_logo.webp" alt="" /></a>
+        <div class="header__nav">
+            <a class="logo__link" href="index.html"><img class="logo__img" src="img/icons/web_logo.webp" alt="" /></a>
+            <ul class="header__links">
+                <li class="header__li">
+                    <a href="#body" class="header__link">Inicio</a>
+                </li>
+                <li class="header__li">
+                    <a href="#productos" class="header__link">Productos</a>
+                </li>
+                <li class="header__li">
+                    <a href="" class="header__link">Nosotros</a>
+                </li>
+                <li class="header__li">
+                    <a href="" class="header__link">Contacto</a>
+                </li>
+            </ul>
+        </div>
         <div class="header__container">
             <div class="header__titles no_selection">
                 <h1 class="header__title">Thomas Nautics</h1>
@@ -35,7 +51,7 @@
         </div>
     </header>
     <section class="section">
-        <article class="article">
+        <article class="article" id="productos">
             <h3 class="article__title">Productos y servicios</h3>
             <h4 class="article__subtitle">Seleccione el producto que le interese</h4>
             <div class="gallery">

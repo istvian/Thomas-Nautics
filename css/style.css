@@ -9,13 +9,6 @@ html {
   height: fit-content;
   font-size: 10px; }
 
-body {
-  box-sizing: border-box;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  overflow-anchor: none;
-  font-size: 10px; }
-
 .modal {
   display: none;
   /* Hidden by default */
@@ -96,6 +89,13 @@ body {
   .modal-content {
     width: 90%; } }
 
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-anchor: none;
+  font-size: 10px; }
+
 .body {
   font-family: 'Urbanist', sans-serif;
   background: #EEFBFF;
@@ -103,23 +103,48 @@ body {
   .body .header {
     background-image: url("../img/photos/hero.jpg");
     background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
     width: 80%;
     max-width: 1200px;
     margin: auto;
     box-shadow: 0px 0px 10px #111111;
-    height: 45rem;
+    height: 80rem;
     display: flex;
     flex-flow: column wrap;
-    justify-content: start; }
-    .body .header .header__link .header__logo {
-      height: 10rem;
-      transition: background 0.3s, transform 0.5s;
-      padding: 0.5rem;
-      margin: 1rem;
-      border-radius: 100px; }
-      .body .header .header__link .header__logo:hover {
-        background: rgba(255, 255, 255, 0.5);
-        transform: scale(105%); }
+    justify-content: start;
+    align-items: center; }
+    .body .header .header__nav {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: fit-content;
+      margin: 0; }
+      .body .header .header__nav .logo__link .logo__img {
+        height: 10rem;
+        transition: background 0.3s, transform 0.5s;
+        margin: 1rem;
+        border-radius: 100px; }
+        .body .header .header__nav .logo__link .logo__img:hover {
+          background: #125068;
+          transform: scale(105%); }
+      .body .header .header__nav .header__links {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 2rem; }
+        .body .header .header__nav .header__links .header__li {
+          display: inline; }
+          .body .header .header__nav .header__links .header__li .header__link {
+            color: #FFF;
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem; }
+            .body .header .header__nav .header__links .header__li .header__link:hover {
+              color: #125068;
+              background: rgba(255, 255, 255, 0.5); }
     .body .header .header__container {
       width: 100%;
       display: flex;
@@ -132,9 +157,9 @@ body {
         text-align: center;
         justify-content: center;
         margin: 1rem 3rem;
-        border-radius: 5px;
         padding: 3rem 4rem;
-        color: #125068; }
+        color: #125068;
+        background: rgba(255, 255, 255, 0.5); }
         .body .header .header__container .header__titles .header__title {
           font-weight: bold;
           font-size: 4rem; }
