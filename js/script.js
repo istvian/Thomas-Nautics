@@ -43,5 +43,4 @@ function show(id) {
     modal.style.display = "flex";
     img.src = `${result[id].children[0].getAttribute("src")}`;
     caption.innerHTML = result[id].children[1].innerHTML;
-
 }
