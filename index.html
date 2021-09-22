@@ -14,12 +14,9 @@
 </head>
 
 <body class="body" id="inicio">
+    <video src="video/bgvid.mp4" class="bg__video" autoplay loop muted></video>
 
     <div id="myModal" class="modal">
-
-        <!-- The Close Button -->
-        <span class="close">&times;</span>
-
         <!-- Modal Content (The Image) -->
         <img class="modal-content" id="popImg">
 
@@ -28,8 +25,8 @@
     </div>
     <header class="header">
         <div class="header__nav">
-            <a class="logo__link" href="index.html"><img class="logo__img" src="img/icons/web_logo.webp" alt="" /></a>
-            <ul class="header__links">
+
+            <ul class="header__links no_selection">
                 <li class="header__li">
                     <a href="#productos" class="header__link">Productos y Servicios</a>
                 </li>
@@ -40,44 +37,57 @@
                     <a href="" class="header__link">Contacto</a>
                 </li>
             </ul>
+            <a class="logo__link" href="index.html"><img class="logo__img" src="img/icons/web_logo.webp" alt="" /></a>
         </div>
         <div class="header__container">
             <div class="header__titles no_selection">
                 <h1 class="header__title">Thomas Nautics</h1>
                 <h2 class="header__subtitle">Seguridad Marítima</h2>
+                <h3 class="header__message">Mensaje</h3>
             </div>
         </div>
     </header>
-    <section class="section">
+    <section class="section no_selection">
         <article class="article" id="productos">
-            <h3 class="article__title">Productos y servicios</h3>
-            <h4 class="article__subtitle">Seleccione el producto que le interese</h4>
+            <h3 class="article__title no_selection">Productos y servicios</h3>
+            <h4 class="article__subtitle no_selection">Seleccione el producto que le interese</h4>
             <div class="gallery">
-                <div class="gallery__item">
-                    <a href="javascript:pop('balsa','Balsa salvavida')"><img class="gallery__img" src="img/photos/balsa.jpg" alt=""></a>
-                    <a href="javascript:pop('balsa','Balsa salvavida')" class="gallery__text ">Balsa salvavida</a>
+                <div class="gallery__item" id="item1">
+                    <img class="gallery__img" src="img/photos/balsa.jpg" alt="Certificación balsas salvavidas inflables">
+                    <p class="no_visible">Certificamos balsas salvavidas inflables de uso Bahía (Pack 2), Costero (Pack B) y para uso Oceánico (Pack A)</p>
+                    <p class="gallery__text">Certificación balsas salvavidas inflables</p>
                 </div>
                 <div class="gallery__item">
-                    <a href="javascript:pop('balsa-inflable','Balsa inflable')"><img class="gallery__img" src="img/photos/balsa-inflable.jpg" alt=""></a>
-                    <a href="javascript:pop('balsa-inflable','Balsa inflable')" class="gallery__text ">Balsa inflable</a>
+                    <img class="gallery__img" src="img/photos/balsa-inflable.jpg" alt="Venta de dispositivos de salvamento" id="item2">
+                    <p class="no_visible"><strong>Dispositivos de salvamento aprobados por la DGMN y MM - Armada de Chile</strong><br><br><strong>- Balsas salvavidas inflables para uso Costero y de Bahía:</strong><br>Marca: Shanghai Youlong Rubber Products Co., Ltd.<br>Normas
+                        técnicas que cumple: Norma internacional ISO 9650-1 y ISO 9650-3:2009<br><br><strong>- Balsas salvavidas inflables Oceánicas:</strong><br>Marca: Shanghai Youlong Rubber Products Co., Ltd.<br>Normas Técnicas que cumple: Cumple SOLAS
+                        74 y sus enmiendas, Capítulo III, regla 4, 13, 21, 26, 31 y 34
+                    </p>
+                    <p class="gallery__text ">Venta de dispositivos de salvamento</p>
                 </div>
                 <div class="gallery__item">
-                    <a href="javascript:pop('chalecos-salvavidas','Chalecos salvavidas')"><img class="gallery__img" src="img/photos/chalecos-salvavidas.jpg" alt=""></a>
-                    <a href="javascript:pop('chalecos-salvavidas','Chalecos salvavidas')" class="gallery__text ">Chalecos salvavidas</a>
+                    <img class="gallery__img" src="img/photos/chalecos-salvavidas.jpg" alt="Chalecos salvavidas" id="item3">
+                    <p class="no_visible">Chalecos salvavidas <br>Marca: Shanghai Youlong Rubber Products Co., Ltda. </p>
+                    <p class="gallery__text ">Chalecos salvavidas</p>
+                </div>
+
+                <div class="gallery__item">
+                    <img class="gallery__img" src="img/photos/servicios-abordo.jpg" alt="Servicios abordo" id="item4">
+                    <p class="no_visible">Instalación a bordo de balsas salvavidas inflables según lo dispone la Circular de la DGMN. y MM. N° O-71/005 y sus instrucciones para las zafas hidrostáticas de las balsas salvavidas inflables.</p>
+                    <p class="gallery__text ">Servicios abordo</p>
                 </div>
                 <div class="gallery__item">
-                    <a href="javascript:pop('otros-servicios','Otros servicios')"><img class="gallery__img" src="img/photos/otros-servicios.jpg" alt=""></a>
-                    <a href="javascript:pop('otros-servicios','Otros servicios')" class="gallery__text ">Otros servicios</a>
+                    <img class="gallery__img" src="img/photos/senalizacion-emergencia.jpg" alt="Señalización de emergencia" id="item5">
+                    <p class="no_visible">Somos importadores Autorizados por la DGMN - Ministerio de Defensa Productos Homologados y Aprobados por la DGMN y MM - Armada de Chile Fabricante: Huahai Marine Signals MFG. Co., Ltd. </p>
+                    <p class="gallery__text ">Señalización de emergencia</p>
                 </div>
                 <div class="gallery__item">
-                    <a href="javascript:pop('senalizacion-emergencia','Señalización de emergencia')"><img class="gallery__img" src="img/photos/senalizacion-emergencia.jpg" alt=""></a>
-                    <a href="javascript:pop('senalizacion-emergencia','Señalización de emergencia')" class="gallery__text ">Señalización de emergencia</a>
-                </div>
-                <div class="gallery__item">
-                    <a href="javascript:pop('servicios-abordo','Servicios abordo')"><img class="gallery__img" src="img/photos/servicios-abordo.jpg" alt=""></a>
-                    <a href="javascript:pop('servicios-abordo','Servicios abordo')" class="gallery__text ">Servicios abordo</a>
+                    <img class="gallery__img" src="img/photos/otros-servicios.jpg" alt="Otros servicios" id="item6">
+                    <p class="no_visible">Realizamos la importación de dispositivos de salvamento marítimos y de accesorios y repuestos para las balsas salvavidas inflables.</p>
+                    <p class="gallery__text ">Otros servicios</p>
                 </div>
             </div>
+            <p class="article__subtitle no_selection">Revisa nuestro catálogo de productos y nuestras marcas.</p>
             <div class="upArrow">
                 <a href="#inicio"><img src="img/icons/up-arrow.png" alt=""></a>
                 <p href="#inicio" class="no_selection">Subir</p>
