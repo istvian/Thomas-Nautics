@@ -16,8 +16,20 @@
 <body class="body" id="inicio">
     <video class="bg__video" autoplay loop muted>
         <source src="video/hd.mp4" type="video/mp4">
-        <source src="video/fhd.mp4" type="video/mp4">
-</video>
+        <source src="video/fhd.mp4" type="video/mp4"></video>
+    <div class="upArrow">
+        <a href="#inicio"><img src="img/icons/up-arrow.webp" alt=""></a>
+        <p href="#inicio" class="no_selection">Subir</p>
+    </div>
+    <div class="loader">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="load__text">Cargando...</div>
+    </div>
     <div id="myModal" class="modal">
         <img class="modal-content" id="popImg">
         <div id="caption"></div>
@@ -29,7 +41,7 @@
                     <a href="#productos" class="header__link">Productos y Servicios</a>
                 </li>
                 <li class="header__li">
-                    <a href="" class="header__link">Sobre Nosotros</a>
+                    <a href="#nosotros" class="header__link">Sobre Nosotros</a>
                 </li>
                 <li class="header__li">
                     <a href="" class="header__link">Contacto</a>
@@ -47,12 +59,12 @@
     </header>
     <section class="section no_selection">
         <article class="article" id="productos">
-            <h3 class="article__title no_selection">Productos y servicios</h3>
-            <h4 class="article__subtitle no_selection">Seleccione el producto que le interese</h4>
+            <h3 class="article__title">Productos y servicios</h3>
+            <h4 class="article__subtitle">Seleccione el producto que le interese</h4>
             <div class="gallery">
                 <div class="gallery__item" id="item1">
                     <img class="gallery__img" src="img/photos/balsa.webp" alt="Certificación balsas salvavidas inflables">
-                    <p class="no_visible">Certificamos balsas salvavidas inflables para uso Oceánico (Pack A), Costero (Pack B) y de Bahía (Pack 2)</p>
+                    <p class="no_visible">Certificamos balsas salvavidas inflables para uso Oceánico (Pack A)<br>Costero (Pack B) y de Bahía (Pack 2)</p>
                     <p class="gallery__text">Certificación balsas salvavidas inflables</p>
                 </div>
                 <div class="gallery__item">
@@ -65,7 +77,7 @@
                 </div>
                 <div class="gallery__item">
                     <img class="gallery__img" src="img/photos/chalecos-salvavidas.webp" alt="Chalecos salvavidas" id="item3">
-                    <p class="no_visible">Chalecos salvavidas <br>Marca: Shanghai Youlong Rubber Products Co., Ltda. </p>
+                    <p class="no_visible">Chalecos salvavidas<br>Dispositivos de salvamento aprobados por la DGMN y MM - Armada de Chile<br>Marca: Shanghai Youlong Rubber Products Co., Ltda.</p>
                     <p class="gallery__text ">Chalecos salvavidas</p>
                 </div>
 
@@ -76,7 +88,8 @@
                 </div>
                 <div class="gallery__item">
                     <img class="gallery__img" src="img/photos/senalizacion-emergencia.webp" alt="Señalización de emergencia" id="item5">
-                    <p class="no_visible">Somos importadores Autorizados por la DGMN - Ministerio de Defensa Productos Homologados y Aprobados por la DGMN y MM - Armada de Chile Fabricante: Huahai Marine Signals MFG. Co., Ltd. </p>
+                    <p class="no_visible">Dispositivos de Señalización Aprobados por la DGMN y MM - Armada de Chile<br>Somos importadores Autorizados por la DGMN - Ministerio de Defensa Productos Homologados y Aprobados por la DGMN y MM - Armada de Chile <br>Fabricante: Huahai
+                        Marine Signals MFG. Co., Ltd. </p>
                     <p class="gallery__text ">Señalización de emergencia</p>
                 </div>
                 <div class="gallery__item">
@@ -85,11 +98,58 @@
                     <p class="gallery__text ">Otros servicios</p>
                 </div>
             </div>
-            <p class="article__subtitle no_selection">Revisa nuestro catálogo de productos y nuestras marcas.</p>
-            <div class="upArrow">
-                <a href="#inicio"><img src="img/icons/up-arrow.webp" alt=""></a>
-                <p href="#inicio" class="no_selection">Subir</p>
+            <p class="article__subtitle">Revisa nuestro catálogo de productos y nuestras marcas.</p>
+        </article>
+
+        <article class="article article--nosotros text--white" id="nosotros">
+            <h3 class="article__title text--white">Sobre Nosotros</h3>
+            <p class="article__text text--white">Con más de <strong>55 años de experiencia</strong> en el rubro marítimo, hemos creado <strong>THOMAS NAUTICS SpA</strong> para entregar dispositivos de salvamento marítimos de la más alta <strong>Seguridad y Calidad</strong>, acorde con las
+                actuales normativas nacionales e internacionales. <br><br> Ofrecemos a nuestros clientes de todo Chile <strong>productos Certificados y Homologados</strong> y la oportunidad de importarlos directamente desde el <strong>mercado Asiático, Americano o Europeo</strong>,
+                buscando siempre la excelencia en el servicio. Esperamos ofrecer las soluciones que tú necesitas.
+            </p>
+            <img class="article__img" src="img/photos/hero.webp" alt="">
+        </article>
+        <article class="article" id="productos">
+            <h3 class="article__title">Productos y servicios</h3>
+            <h4 class="article__subtitle">Seleccione el producto que le interese</h4>
+            <div class="gallery">
+                <div class="gallery__item" id="item1">
+                    <img class="gallery__img" src="img/photos/balsa.webp" alt="Certificación balsas salvavidas inflables">
+                    <p class="no_visible">Certificamos balsas salvavidas inflables para uso Oceánico (Pack A)<br>Costero (Pack B) y de Bahía (Pack 2)</p>
+                    <p class="gallery__text">Certificación balsas salvavidas inflables</p>
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__img" src="img/photos/balsa-inflable.webp" alt="Venta de dispositivos de salvamento" id="item2">
+                    <p class="no_visible"><strong>Dispositivos de salvamento aprobados por la DGMN y MM - Armada de Chile</strong><br><br><strong>- Balsas salvavidas inflables para uso Costero y de Bahía:</strong><br>Marca: Shanghai Youlong Rubber Products Co., Ltd.<br>Normas
+                        técnicas que cumple: Norma internacional ISO 9650-1 y ISO 9650-3:2009<br><br><strong>- Balsas salvavidas inflables Oceánicas:</strong><br>Marca: Shanghai Youlong Rubber Products Co., Ltd.<br>Normas Técnicas que cumple: Cumple SOLAS
+                        74 y sus enmiendas, Capítulo III, regla 4, 13, 21, 26, 31 y 34
+                    </p>
+                    <p class="gallery__text ">Venta de dispositivos de salvamento</p>
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__img" src="img/photos/chalecos-salvavidas.webp" alt="Chalecos salvavidas" id="item3">
+                    <p class="no_visible">Chalecos salvavidas<br>Dispositivos de salvamento aprobados por la DGMN y MM - Armada de Chile<br>Marca: Shanghai Youlong Rubber Products Co., Ltda.</p>
+                    <p class="gallery__text ">Chalecos salvavidas</p>
+                </div>
+
+                <div class="gallery__item">
+                    <img class="gallery__img" src="img/photos/servicios-abordo.webp" alt="Servicios abordo" id="item4">
+                    <p class="no_visible">Instalación a bordo de balsas salvavidas inflables según lo dispone la Circular de la DGMN. y MM. N° O-71/005 y sus instrucciones para las zafas hidrostáticas de las balsas salvavidas inflables.</p>
+                    <p class="gallery__text ">Servicios a bordo</p>
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__img" src="img/photos/senalizacion-emergencia.webp" alt="Señalización de emergencia" id="item5">
+                    <p class="no_visible">Dispositivos de Señalización Aprobados por la DGMN y MM - Armada de Chile<br>Somos importadores Autorizados por la DGMN - Ministerio de Defensa Productos Homologados y Aprobados por la DGMN y MM - Armada de Chile <br>Fabricante: Huahai
+                        Marine Signals MFG. Co., Ltd. </p>
+                    <p class="gallery__text ">Señalización de emergencia</p>
+                </div>
+                <div class="gallery__item">
+                    <img class="gallery__img" src="img/photos/otros-servicios.webp" alt="Otros servicios" id="item6">
+                    <p class="no_visible">Realizamos la importación de dispositivos de salvamento marítimos y de accesorios y repuestos para las balsas salvavidas inflables.</p>
+                    <p class="gallery__text ">Otros servicios</p>
+                </div>
             </div>
+            <p class="article__subtitle">Revisa nuestro catálogo de productos y nuestras marcas.</p>
         </article>
     </section>
     <script src="js/script.js"></script>
