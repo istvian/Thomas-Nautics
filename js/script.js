@@ -34,3 +34,15 @@ console.log(loading);
 window.addEventListener("load", function() {
     loading.style.display = "none";
 })
+
+const checkpoint = 300;
+
+window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= checkpoint) {
+        opacity = 0 + currentScroll / checkpoint;
+    } else {
+        opacity = 1;
+    }
+    document.querySelector(".upArrow").style.opacity = opacity;
+});
