@@ -194,64 +194,67 @@ a {
 
 @media (max-width: 600px) {
   .header {
+    margin: auto;
     height: 100vh;
+    display: flex;
     flex-flow: column-reverse nowrap;
     justify-content: start;
     align-items: center; }
     .header .header__nav {
-      flex-flow: column wrap;
+      width: 100%;
+      display: flex;
+      flex-flow: row-reverse wrap;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      height: fit-content; }
+      .header .header__nav .logo__link {
+        display: none; }
+        .header .header__nav .logo__link .logo__img {
+          height: 6rem;
+          transition: background 0.3s, transform 0.5s;
+          border-radius: 0 0 5px 0; }
+          .header .header__nav .logo__link .logo__img:hover {
+            background: rgba(255, 255, 255, 0.5); }
       .header .header__nav .header__links {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        padding: 2rem 2rem; }
+        padding: 0; }
         .header .header__nav .header__links .header__li {
-          margin: 1rem 0;
-          display: inline; }
+          display: inline;
+          margin: 1rem; }
           .header .header__nav .header__links .header__li .header__link {
-            background: #111111aa;
+            background-color: #111111aa;
             color: #fff;
-            border-radius: 2px;
-            font-weight: bold;
-            font-size: 1.8rem;
+            font-size: 2rem;
             padding: 0.5rem 1rem;
             text-align: center;
             transition: color 0.4s, background 0.3s; }
             .header .header__nav .header__links .header__li .header__link:hover {
-              color: #fff;
+              color: #125068;
               background: rgba(255, 255, 255, 0.5); }
-      .header .header__nav .logo__link .logo__img {
-        height: 5rem;
-        transition: background 0.3s, transform 0.5s;
-        margin: 2rem 0;
-        border-radius: 100px; }
-        .header .header__nav .logo__link .logo__img:hover {
-          background: rgba(255, 255, 255, 0.5);
-          transform: scale(105%); }
     .header .header__container .header__titles {
-      color: #fff;
-      background: none;
-      margin: 2rem 0;
       display: flex;
       flex-flow: column nowrap;
-      justify-content: space-evenly;
-      align-items: center; }
+      text-align: center;
+      justify-content: center;
+      margin: 5rem 3rem 1rem 3rem;
+      padding: 3rem 4rem;
+      color: #fff;
+      transition: transform 0.4s; }
       .header .header__container .header__titles .header__title {
         font-weight: bold;
-        font-size: 5rem;
-        line-height: 4.8rem; }
+        font-size: 5rem; }
       .header .header__container .header__titles .header__subtitle {
         font-weight: normal;
-        font-size: 3rem;
-        margin-top: 2rem; }
+        font-size: 3rem; }
       .header .header__container .header__titles .header__message {
-        margin: 2rem 0;
+        margin: 1rem 0 0 0;
         font-weight: normal;
-        font-size: 1.8rem;
-        line-height: 1.9rem; } }
+        font-size: 2rem; }
+      .header .header__container .header__titles:hover {
+        transform: scale(105%); } }
 
 .body {
   font-family: "Urbanist", sans-serif;
@@ -425,7 +428,8 @@ a {
   grid-template-areas: "img info";
   grid-template-columns: 3fr 4fr;
   min-height: 100vh;
-  max-height: fit-content; }
+  max-height: fit-content;
+  margin-top: 1rem; }
   .contacto .contacto__img {
     grid-area: img;
     height: 100%;
@@ -447,7 +451,7 @@ a {
       margin: 2rem;
       color: #fff;
       text-align: start;
-      padding: 2rem 1rem;
+      padding: 0 1rem;
       margin: 0;
       margin-bottom: 1.5rem; }
     .contacto .contacto__info .contacto__name {
@@ -480,7 +484,7 @@ a {
       margin: 3rem 1rem 0 1rem; }
 
 .footer {
-  background: black;
+  background: #111111;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
