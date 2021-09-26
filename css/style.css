@@ -394,15 +394,12 @@ a {
   background: #101c20;
   min-height: 100vh;
   max-height: fit-content; }
-  .article__nosotros .text--white {
-    color: #fff; }
   .article__nosotros .nosotros__title {
     color: #125068;
     font-size: 3.5rem;
     text-align: center;
     margin: 2rem;
     grid-area: title;
-    margin: 4rem 0;
     color: #fff;
     text-align: center;
     align-self: center; }
@@ -411,11 +408,11 @@ a {
     padding: 1rem;
     max-width: 1000px;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: end;
-    margin: 2rem 3rem;
+    margin: 0rem 3rem;
     font-weight: normal;
-    line-height: 3.5rem; }
+    line-height: 3rem; }
   .article__nosotros .nosotros__img {
     grid-area: img;
     width: 100%;
@@ -534,13 +531,13 @@ a {
     grid-template-areas: "title title img" "text text img"; }
     .article__nosotros .nosotros__title {
       align-self: center;
-      margin: 1rem 0.2rem; }
+      margin: 0 1rem; }
     .article__nosotros .nosotros__text {
       line-height: 2.5rem;
       font-size: 2rem;
       margin: 0rem 1rem;
       text-align: start;
-      align-self: center; }
+      align-self: flex-start; }
   .contacto {
     display: grid;
     grid-template-areas: "img info";
@@ -580,6 +577,7 @@ a {
         padding: 2rem;
         font-size: 2rem;
         text-align: center;
+        padding: 1rem;
         font-weight: normal;
         text-align: center;
         font-size: 1.7rem;
