@@ -158,7 +158,8 @@ a {
       flex-flow: row wrap;
       justify-content: center;
       align-items: center;
-      padding: 3rem 2rem; }
+      padding: 3rem 2rem;
+      margin: 0 1rem; }
       .header .header__nav .header__links .header__li {
         display: inline; }
         .header .header__nav .header__links .header__li .header__link {
