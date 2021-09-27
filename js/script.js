@@ -1,3 +1,17 @@
+// Escoge el video de fondo
+let video = document.getElementById("video");
+window.addEventListener('resize', onResize, { passive: true });
+
+function onResize() {
+    if (window.innerWidth < 600) {
+        video["src"] = "video/hd.mp4";
+
+    } else {
+        video["src"] = "video/fhd.mp4";
+    }
+}
+
+
 // MODAL POPUP DESAPARECER
 var modal = document.getElementById("myModal");
 var close = document.getElementById("closer");
@@ -22,7 +36,6 @@ function show(id) {
 
 // LOADING
 let loading = document.querySelector(".loader");
-console.log(loading);
 window.addEventListener("load", function() {
     loading.style.display = "none";
 })

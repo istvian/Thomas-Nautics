@@ -20,6 +20,12 @@ body {
   box-sizing: border-box;
   font-size: 10px; }
 
+.no_selection {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none; }
+
 .no_visible {
   display: none; }
 
