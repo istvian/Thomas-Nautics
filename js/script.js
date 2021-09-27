@@ -1,15 +1,7 @@
-// BOTON HAMBURGER
-function myFunction() {
-    var x = document.getElementById("hamb");
-    if (x.style.display === "flex") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "flex";
-    }
-}
 // MODAL POPUP DESAPARECER
 var modal = document.getElementById("myModal");
-modal.onclick = function() {
+var close = document.getElementById("closer");
+close.onclick = function() {
         modal.style.display = "none";
     }
     // LISTADO DE ITEMS
