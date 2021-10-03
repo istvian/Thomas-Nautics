@@ -1,19 +1,20 @@
 // Escoge el video de fondo
 let video = document.getElementById("video");
-window.addEventListener('resize', onResize, { passive: true });
+onResize();
 
 function onResize() {
     if (window.innerWidth < 600) {
-        video["src"] = "video/hd.mp4";
+        video["src"] = "https://github.com/istvian/Thomas-Nautics/blob/master/video/hd.mp4?raw=true";
 
     } else {
-        video["src"] = "video/fhd.mp4";
+        video["src"] = "https://github.com/istvian/Thomas-Nautics/blob/master/video/fhd.mp4?raw=true";
     }
 }
 
 
 // MODAL POPUP DESAPARECER
 var modal = document.getElementById("myModal");
+var catalogo = document.getElementById("catalogo");
 var close = document.getElementById("closer");
 close.onclick = function() {
         modal.style.display = "none";
@@ -24,6 +25,17 @@ for (let index = 0; index < result.length; index++) {
     result[index].addEventListener("click", function() {
         show(index);
     }, true);
+}
+catalogo.addEventListener("click", function() {
+    showCatalogo();
+});
+
+function showCatalogo() {
+    var img = document.getElementById("popImg");
+    var caption = document.getElementById("caption");
+    modal.style.display = "flex";
+    img.src = `${catalogo.children[0].getAttribute("src")}`;
+    caption.innerHTML = catalogo.children[2].innerHTML;
 }
 // MOSTRAR POPUP
 function show(id) {
