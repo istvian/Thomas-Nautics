@@ -792,14 +792,17 @@ a {
   background: #fff;
   -webkit-box-shadow: #111111aa 0px 2px 4px;
           box-shadow: #111111aa 0px 2px 4px;
-  max-height: 30rem;
+  max-height: 40rem;
   max-width: 30rem;
-  margin: 1rem;
+  margin: 3rem 1rem;
   cursor: pointer;
   -webkit-transition: border-radius 0.3s, -webkit-transform 0.2s;
   transition: border-radius 0.3s, -webkit-transform 0.2s;
   transition: transform 0.2s, border-radius 0.3s;
   transition: transform 0.2s, border-radius 0.3s, -webkit-transform 0.2s;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
 }
 
 .article .gallery .gallery__item:hover {
@@ -815,9 +818,9 @@ a {
 }
 
 .article .gallery .gallery__item .gallery__text {
+  height: 20%;
   text-align: center;
   font-size: 1.6rem;
-  margin: 0 0 1rem 0;
   padding: 0.5rem;
 }
 
