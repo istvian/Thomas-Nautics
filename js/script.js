@@ -10,6 +10,9 @@ function onResize() {
         video["src"] = "https://github.com/istvian/Thomas-Nautics/blob/master/video/fhd.mp4?raw=true";
     }
 }
+video.onloadeddata =()=>{
+    loading.style.display = "none";
+};
 
 
 // MODAL POPUP DESAPARECER
@@ -48,9 +51,9 @@ function show(id) {
 
 // LOADING
 let loading = document.querySelector(".loader");
-window.addEventListener("load", function() {
-    loading.style.display = "none";
-})
+// window.addEventListener("load", function() {
+    // loading.style.display = "none";
+// })
 
 const checkpoint = 300;
 
